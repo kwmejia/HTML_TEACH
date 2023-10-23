@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <!-- Para insertar un video en HTML, se utiliza la etiqueta <video> con el atributo src 
+        que especifica la ruta o URL del archivo de video. -->
+
+    <!-- Video con controles básicos: -->
+    <video src="./img/video.mp4" controls></video>
+
+    <!-- Video con dimensiones específicas y vista previa: -->
+    <video src="./img/video.mp4" controls width="640" height="360" poster="img4.avif"></video>
+
+
+    <!-- Video que se reproduce automáticamente en silencio: -->
+    <video src="./img/video.mp4" autoplay muted loop></video>
+
+    <!-- Videos incrustados: -->
+    <!-- En lugar de alojar videos directamente en tu servidor, 
+    es común incrustar videos de plataformas como YouTube o Vimeo. 
+    Para hacer esto, generalmente se utiliza un iframe: -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Mh078qbgnrc?si=VrCdVS8hJNUMIoQ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <video src="./img/video.mp4.mp4" controls>
+        <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+    </video>
+    
+</body>
+</html>

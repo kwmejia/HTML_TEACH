@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Estructura básica de una tabla: --> <br>
+    <table>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+      </tr>
+      <tr>
+        <td>Dato 3</td>
+        <td>Dato 4</td>
+      </tr>
+    </table>
+
+    <!-- Para definir encabezados en una tabla, se utiliza la etiqueta <th> en lugar de <td>. --><br>
+    <table>
+      <tr>
+        <th>Encabezado 1</th>
+        <th>Encabezado 2</th>
+      </tr>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+      </tr>
+    </table>
+
+    <!-- Agrupación de contenido: --><br>
+    <table>
+      <thead>
+        <tr>
+          <th>Encabezado 1</th>
+          <th>Encabezado 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dato 1</td>
+          <td>Dato 2</td>
+        </tr>
+        <tr>
+          <td>Dato 3</td>
+          <td>Dato 4</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total 1</td>
+          <td>Total 2</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Atributos de celdas y filas:
+    colspan: Permite que una celda se extienda a través de varias columnas.
+
+    rowspan: Permite que una celda se extienda a través de varias filas. --><br>
+
+    <table>
+      <tr>
+        <td colspan="2">Dato que abarca 2 columnas</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Dato que abarca 2 filas</td>
+        <td>Dato 2</td>
+      </tr>
+      <tr>
+        <td>Dato 3</td>
+      </tr>
+    </table>
+  </body>
+</html>

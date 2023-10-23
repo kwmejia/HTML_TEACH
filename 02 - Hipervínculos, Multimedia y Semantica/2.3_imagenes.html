@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+</head>
+<body>
+
+    <!-- Para insertar una imagen en HTML, se utiliza la etiqueta <img> 
+    con el atributo src que especifica la ruta o URL de la imagen. -->
+    <img src="./img/img1.avif" alt="Descripción de la imagen">
+
+    <!-- Imagen desde una ruta local: -->
+    <img src="./img/img1.avif" alt="Mi imagen local">
+
+    <!-- Imágenes como enlaces: -->
+    <a href="https://www.ejemplo.com">
+        <img src="imagen.jpg" alt="Hacer clic para ir a ejemplo.com">
+    </a>
+
+    
+    <!-- El atributo loading con el valor "lazy" permite cargar imágenes solo cuando 
+    están a punto de entrar en el área visible de la pantalla. Esto mejora el rendimiento de la página: -->
+    <img src="./img/img1.avif" alt="Imagen con lazy loading" loading="lazy">
+
+    <!-- Tambien podemos importar gifts -->
+    <img src="./img/giphy.gif" alt="Imagen con lazy loading" loading="lazy">
+
+
+    <!-- El uso más común de <figure> es para envolver imágenes y proporcionarles una leyenda. -->
+    <figure>
+        <img src="./img/img1.avif" alt="Descripción de la imagen">
+        <figcaption>Esta es la leyenda de la imagen.</figcaption>
+    </figure>
+        
+
+
+</body>
+</html>
