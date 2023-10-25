@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <style>
+        form {
+            display:  flex;
+            flex-direction: column;
+            width: 200px;
+            gap: 5px
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Estructura básica de un formulario -->
+    <form action="/ruta-del-procesador" method="post">
+      <input type="text" name="nombre" placeholder="Tu nombre" />
+      <input type="submit" value="Enviar" />
+
+      <!-- Tipos de campos de entrada -->
+      <input type="text" name="nombre" placeholder="Nombre completo" />
+      <input type="password" name="contraseña" placeholder="Contraseña" />
+      <input type="email" name="correo" placeholder="ejemplo@dominio.com" />
+      <input type="url" name="pagina" placeholder="https://www.ejemplo.com" />
+      <input type="number" name="edad" min="0" max="100" />
+      <input type="range" name="volumen" min="0" max="10" />
+      <input type="date" name="fecha_nacimiento" />
+      <input type="color" name="color_favorito" />
+
+      <!-- Atributos útiles -->
+      <!-- placeholder: Muestra un texto de sugerencia en el campo de entrada.
+    required: Hace que un campo sea obligatorio. pattern: Permite definir una
+    expresión regular para validar el contenido del campo. autocomplete: Sugiere
+    autocompletados para el campo. autofocus: Enfoca automáticamente el campo
+    cuando se carga la página. -->
+      <input type="text" name="nombre" placeholder="Nombre completo" required />
+      <input
+        type="text"
+        name="codigo"
+        pattern="[A-Za-z]{3}-[0-9]{3}"
+        placeholder="Código (AAA-123)"
+      />
+      <input type="email" name="correo" autocomplete="on" />
+      <input type="text" name="campo_enfocado" autofocus />
+
+      <!-- Etiquetas relacionadas -->
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" />
+
+      <fieldset>
+        <legend>Información personal</legend>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" />
+      </fieldset>
+
+      <textarea
+        name="comentario"
+        rows="4"
+        cols="50"
+        placeholder="Escribe tu comentario aquí"
+      ></textarea>
+
+      <select name="pais">
+        <option value="es">España</option>
+        <option value="mx">México</option>
+        <option value="ar">Argentina</option>
+      </select>
+      
+    </form>
+  </body>
+</html>
